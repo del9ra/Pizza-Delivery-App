@@ -45,5 +45,17 @@ There are 'static' and 'templates' packages with _'style.css'_ and html files in
 #### Homepage
 ![alt text](images/homepage.png)
 
+#### Add to cart
+![alt text](images/addToCart.png)
 
+#### Cart
+![alt text](images/cart.png)
 
+#### Checkout
+![alt text](images/checkout.png)
+
+#### About
+![alt text](images/about.png)
+
+#### Contact
+![alt text](images/contact.png)
