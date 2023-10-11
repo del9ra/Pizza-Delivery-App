@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success
+{% endblock %}
+
+{% block main %}
+<h1>Order placed, thanks!</h1>
+
+<div class="center">
+  <br>
+  <p>Shipping to {{ bio.first_name }} {{ bio.last_name }} {{ bio.address }} {{ bio.city }} {{ bio.country }} {{ bio.zip }}</p>
+</div>
+<form action="/">
+    <button class="btn btn-info">Order more</button>
+</form>
+{% endblock %}
+
+from project import create_app, db
+from project.models import Product
+app = create_app()
+products = [Product(item="Sausage Pizza", price=16.00, description="Our signature pizza sauce layered with sausage and real cheese made from mozzarella for a taste you’ll crave. Your choice of crust.", image="https://www.papajohns.com/static-assets/a/images/web/product/pizzas/sausagepp-slated.jpg"),Product(item="Pepperoni Pizza", price=18.5, description="Your choice of crust covered with our signature pizza sauce, real cheese made from mozzarella, and pepperoni. With a pepperoni in almost every bite, it's one of our most popular pizzas.", image="https://www.papajohns.com/static-assets/a/images/web/product/cyo/Original-Crust-Pepperoni-105408.jpg"), Product(item="Four Cheese Pizza", price=19.75, description="Simple, yet simply delicious. Real cheese made from mozzarella on top of our signature pizza sauce with your choice of crust, then baked to a golden brown. It has just what you want, and nothing you don’t.", image="https://www.papajohns.com/static-assets/a/images/web/product/cyo/Original-Crust-Cheese-105369.jpg"), Product(item="Neapolitan Pizza", price=21.0, description="A masterpiece of hearty, high-quality meats including pepperoni, savory sausage, real beef, hickory-smoked bacon, and julienne-cut Italian bacon, all topped with real cheese made from mozzarella.", image="https://www.papajohns.com/static-assets/a/images/compressed/product/pizzas/garden-fresh-slate-compressed.png")]
+with app.app_context():
+    for product in products:
+        db.session.add(product)
+    db.session.commit()

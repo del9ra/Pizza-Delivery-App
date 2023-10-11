@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add to cart
+{% endblock %}
+
+{% block main %}
+<div class="row justify-content-center">
+    <div class="col-4">
+        <div class="card h-100">
+            <img class="card-img-top" src="{{ image }}" alt="..." />
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card-body p-4">
+            <h5>{{ item }}</h5>
+            {{ price | usd }}
+            <p>{{ description }}</p>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <form action="/order" method="post">
+                <input type="hidden" name="product_id" value="{{ product_id }}">
+                <input name="number" placeholder="How many pizzas?" type="number">
+                <button class="btn btn-outline-dark mt-auto" type="submit">Add to cart</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+{% endblock %}

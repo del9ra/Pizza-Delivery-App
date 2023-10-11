@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block main %}
+<h1>About Us</h1>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1200">
+        <img src="https://images.pexels.com/photos/5953573/pexels-photo-5953573.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Chef">
+      </div>
+      <div class="carousel-item" data-bs-interval="1200">
+        <img src="https://images.pexels.com/photos/3437689/pexels-photo-3437689.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="cook">
+      </div>
+      <div class="carousel-item" data-bs-interval="1200">
+        <img src="https://images.pexels.com/photos/5779787/pexels-photo-5779787.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="kitchen">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div class="center">
+  <br>
+<p>In 1888, a small pizzeria by the name of Iceland Brothers was established on Ludlow Street in New York’s Lower East Side by the Iceland brothers.</p>
+<p>Upon the arrival of Willy Mare in 1903, the name of the store was officially changed to "Iceland & Mare". Willy’s cousin Benny joined</p>
+<p>him in 1910, buying out the Iceland brothers to officially form Il Mare. Their landsman Harry Tarowsky bought into the partnership in April</p>
+<p>1917. Il Mare was moved across the street, to its present location, during the construction of the subway system</p>
+</div>
+{% endblock %}
