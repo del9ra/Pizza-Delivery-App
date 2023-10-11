@@ -1,7 +1,6 @@
 # CS50 Final Project
 #### Description:
-Pizzeria Il Mare 
-This is a pizzeria application, where a user can order pizza.
+Pizzeria Il Mare is an application, where a user can order pizza delivery online.
 In 'Pizzeria' directory I made "project" directory with the following blueprints in here: 'orders', 'users', 'products' and 'main'. 
 
 In _'init.py'_ I created a Flask app object with `create_app()`. `inject_quantity()` is nested in this function and allows us to see a number of items in the cart from all the routes. Apart from that, I used LoginManager (to log in, log out and sign up), current_user(to get data about a current user) and SQLAlchemy(to connect the app to a database). In 'models.py' I implemented four classes as models for Cart, Order, User and Product.
