@@ -35,3 +35,15 @@ There are 'static' and 'templates' packages with _'style.css'_ and html files in
 
 **requirements.txt** contains pip-installable libraries
 
+***
+#### Signup
+![alt text](images/signup.jpg)
+
+#### Login
+![alt text](images/login.jpg)
+
+#### Homepage
+![alt text](images/home page.jpg)
+
+
+
