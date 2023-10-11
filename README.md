@@ -37,13 +37,13 @@ There are 'static' and 'templates' packages with _'style.css'_ and html files in
 
 ***
 #### Signup
-![alt text](images/signup.jpg)
+![alt text](images/signup.png)
 
 #### Login
-![alt text](images/login.jpg)
+![alt text](images/login.png)
 
 #### Homepage
-![alt text](images/home page.jpg)
+![alt text](images/homepage.png)
 
 
 
